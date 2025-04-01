@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/4c78b883da.js" crossorigin="anonymous"></script>
+    <title>Jonathanzur made this website not anyone else i also wonder how long can a website's title can be?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="side">
+      <a href="index.html" id="backHome">
+      <i class="fa-solid fa-house"></i></a>
+      <br>
+      <ul style="list-style: none;" class="unorderedList">
+        <li><a href="https://www.tiktok.com/@itsjonathanzur?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i> My TikTok!</a></li> 
+        <li></li>
+      </ul>
+    </div>
+    <div class="div1">
+      <h1>Function running</h1>
+    </div>
+    <div class="div1">
+      <h2>Functions:</h2>
+      <h4>What's your name?</h4>
+      <input id="name" type="text" placeholder="Enter your name" />
+      <button onclick="function1()">Enter</button>
+      <p id="function1"></p>
+      <hr />
+      <h4>Text styler</h4>
+      <button id="italic" onclick="textStylerItalic()">ITALIC</button>
+      <button id="normal" onclick="normalText()">Unstyled text</button>
+      <select id="colors">
+        <option selected disabled>Choose Color</option>
+        <option id="red">Red</option>
+        <option id="blue">Blue</option>
+        <option id="yellow">Yellow</option>
+        <option id="green">Green</option>
+        <option id="pink">Pink</option>
+      </select>
+      <button onclick="applyColor()">Apply Color</button>
+      <br />
+      <br />
+      <textarea placeholder="Enter your text" id="textStyler"></textarea>
+      <h5>Styled text:</h5>
+      <p id="StyledText" class="textStyle"></p>
+      <hr />
+      <br />
+      <h4>Unit converter</h4>
+      <h5>Kilometers to Miles</h5>
+      <input type="number" placeholder="Kilometers" id="kmToMiles" />
+      <button onclick="kmToMiles()">Convert</button>
+      <br />
+      <p id="conversionResult1"></p>
+      <hr />
+      <h4>Guessing Game</h4>
+      <br />
+      <input type="number" id="numberGuess" placeholder="Guess!" />
+      <button onclick="guessNumber()">Guess</button>
+      <br />
+      <p id="gNOutput" class="gNOutputc"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
