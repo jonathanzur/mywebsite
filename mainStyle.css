@@ -1,0 +1,139 @@
+:root {
+    --sky-blue: #8ecae6ff;
+    --blue-green: #219ebcff;
+    --prussian-blue: #023047ff;
+    --selective-yellow: #ffb703ff;
+    --ut-orange: #fb8500ff;
+  }
+  
+  body {
+    font-family: Oswald, Helvetica, sans-serif;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/015/882/420/non_2x/modern-minimalist-dark-blue-premium-abstract-background-with-luxury-geometric-dark-shape-exclusive-wallpaper-design-for-website-poster-brochure-presentation-free-vector.jpg");
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  h1 {
+    text-align: center;
+    color: var(--prussian-blue);
+    background-color: var(--selective-yellow);
+    width: 80%;
+    margin: 20px auto 0px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px black;
+    position: relative;
+  }
+  h1::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #FEAC5E, #C779D0, #4BC0C8);
+    background-size: 200% 200%;
+    z-index: -1;
+    box-sizing: border-box;
+    animation-name: gradient;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: var(--prussian-blue);
+    z-index: 110;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--selective-yellow);
+    width: 80%;
+    margin: 20px auto 0px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px black;
+    flex-direction: row;
+    position: relative;
+  }
+  .main::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #FEAC5E, #C779D0, #4BC0C8);
+    background-size: 200% 200%;
+    z-index: -1;
+    box-sizing: border-box;
+    animation-name: gradient;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .mainButton {
+    position: relative;
+    background-color: #08A4BD;
+    padding: 20px;
+    margin: 0 10px;
+    border: 4px solid #01172F;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.356);
+    font-size: 40px;
+    transition-duration: 0.3s;
+    z-index: 1;
+  }
+  .mainButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 100px black;
+  }
+  .mainButton:active {
+    background-color: #0899AF;
+  }
+  .mainButton::after {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #FEAC5E, #C779D0, #4BC0C8);
+    width: 100%;
+    height: 100%;
+    background-size: 200% 200%;
+    border-radius: inherit;
+    box-sizing: border-box;
+    z-index: 10;
+    animation-name: button;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: opacity 0.3s;
+    opacity: 1;
+  }
+  @keyframes button {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
